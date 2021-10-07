@@ -1,0 +1,208 @@
+@import 'react-alice-carousel/lib/scss/alice-carousel.scss';
+.ourteam{
+    padding: 100px 215px 130px;
+    text-align: center;
+    &__content{
+        position: relative;
+        margin: 70px 0 0 0;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        text-align: center;
+        &__item{
+            width: 429px;
+
+            &__img{
+                height: 315px;
+                width: 315px;
+                border-radius: 50%;
+            }
+            &__name{
+                margin: 30px 0 6px;
+                font-family: 'Montserrat';
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 22px;
+            }
+            &__description{
+                font-family: 'Montserrat';
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+        &__button{
+            position: absolute;
+            bottom: -82px;
+            right: -80px;
+            width: 40px;
+            height: 40px;  
+            border: none;
+            border-radius: 3px;
+            color: $color-primary;
+            background-color: $color-third;
+        }
+    }
+
+}
+
+@media screen and (max-width:1366px){
+    .ourteam{
+        padding: 100px 100px 130px;
+        &__content{
+            &__item{
+                width: 380px;
+            }
+        }    
+    }
+}
+
+
+@media screen and (max-width:1200px){
+    .ourteam{
+        padding: 100px 80px 130px;
+        text-align: center;
+        &__content{
+            position: relative;
+            margin: 50px 0 0 0;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            text-align: center;
+            &__item{
+                width: 330px;
+    
+                &__img{
+                    height: 300px;
+                    width: 300px;
+                    border-radius: 50%;
+                }
+                &__name{
+                    margin: 30px 0 6px;
+                    font-family: 'Montserrat';
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+                &__description{
+                    font-family: 'Montserrat';
+                    font-weight: normal;
+                    font-size: 15px;
+                    line-height: 19px;
+                }
+            }
+            &__button{
+                position: absolute;
+                bottom: -62px;
+                right: 0px;
+                width: 40px;
+                height: 40px;  
+                border: none;
+                border-radius: 3px;
+                color: $color-primary;
+                background-color: $color-third;
+            }
+        }
+    
+    }
+    
+}
+
+@media screen and (max-width:1024px){
+    .ourteam{
+        padding: 100px 75px 130px;
+        text-align: center;
+        &__content{
+            position: relative;
+            margin: 50px 0 0 0;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            text-align: center;
+            &__item{
+                width: 330px;
+    
+                &__img{
+                    height: 300px;
+                    width: 300px;
+                    border-radius: 50%;
+                }
+                &__name{
+                    margin: 30px 0 6px;
+                    font-family: 'Montserrat';
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+                &__description{
+                    font-family: 'Montserrat';
+                    font-weight: normal;
+                    font-size: 15px;
+                    line-height: 19px;
+                }
+            }
+            &__button{
+                position: absolute;
+                bottom: -62px;
+                right: 0px;
+                width: 40px;
+                height: 40px;  
+                border: none;
+                border-radius: 3px;
+                color: $color-primary;
+                background-color: $color-third;
+            }
+        }
+    
+    }
+    
+}
+
+@media screen and (max-width:767px){
+    .ourteam{
+        padding: 100px 15px 130px;
+        text-align: center;
+        &__content{
+            .alice-carousel__stage{
+                transform: translate(90deg);
+    
+            }
+            position: relative;
+            margin: 70px 0 0 0;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            text-align: center;
+            &__item{
+                width: 429px;
+                    transform: translate(90deg);
+                &__img{
+                    height: 315px;
+                    width: 315px;
+                    border-radius: 50%;
+                }
+                &__name{
+                    margin: 30px 0 8px;
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+                &__description{
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+            }
+            &__button{
+                position: absolute;
+                bottom: -40px;
+                right: 0px;
+                width: 40px;
+                height: 40px;  
+                border: none;
+                border-radius: 3px;
+                color: $color-primary;
+                background-color: $color-third;
+            }
+        }
+    
+    }
+}

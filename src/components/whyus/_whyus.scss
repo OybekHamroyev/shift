@@ -1,0 +1,135 @@
+.whyus{
+    padding: 100px 215px;
+    text-align: center;
+    &__title{
+        margin-bottom: 70px;
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        &__item{
+            width: 25%;
+            &__img{
+                width: 95px;
+                height: 95px;
+            }
+            &__title{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 22px;
+                margin:10px 0 15px 0;
+            }
+            &__description{
+                width: 100%;
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 20px;
+                text-align: center;
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1366px){
+    .whyus{
+        padding: 100px;
+    }
+}
+
+@media screen and (max-width:1200px){
+    .whyus{
+        padding: 100px 80px;
+    }
+}
+
+
+@media screen and (max-width:767px){
+    .whyus{
+        padding: 100px 15px;
+        text-align: center;
+        &__title{
+            margin-bottom: 70px;
+        }
+        &__content{
+            display: flex;
+            justify-content: space-between;
+            &__item{
+                width: 230px;
+                &__img{
+                    width: 95px;
+                    height: 95px;
+                }
+                &__title{
+                    font-family: 'Montserrat';
+                    width: 100%;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 20px;
+                    margin:15px 0 12px 0;
+                }
+                &__description{
+                    width: 100%;
+                    font-family: "Montserrat";
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 20px;
+                    text-align: center;
+    
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:360px){
+    .whyus{
+        padding: 100px 0;
+        text-align: center;
+        &__title{
+            margin-bottom: 70px;
+        }
+        &__content{
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+            &__item{
+                width: 230px;
+                margin-bottom: 50px;
+                &:nth-last-child(1) {
+                    margin-bottom: 0;    
+                }
+                &__img{
+                    width: 95px;
+                    height: 95px;
+                }
+                &__title{
+                    font-family: 'Montserrat';
+                    width: 100%;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 20px;
+                    margin:15px 0 12px 0;
+                }
+                &__description{
+                    width: 100%;
+                    font-family: "Montserrat";
+                    font-style: normal;
+                    font-weight: normal;
+
+                    font-size: 14px;
+                    line-height: 17px;
+    
+                }
+            }
+        }
+    }
+}

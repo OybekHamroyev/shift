@@ -1,0 +1,89 @@
+.background{
+    z-index: -1;
+    .background-left {
+        position: absolute;
+        top: 424%;
+        left: 0;
+        z-index: -1;
+        height: 1781px;
+        width: 415px;
+        // height: 100%;
+        // width: 100%;
+    }
+    .background-right {
+        position: absolute;
+        top: 230%;
+        right: 0;
+        z-index: -1;
+        height: 1666px;
+        width: 503px;
+        // height: 100%;
+        // width: 100%;
+    }
+}
+@media screen and (max-width:1366px){
+    .background{
+        .background-left {
+            // width: 85%;
+            // height: 85%;
+            height: 1700px;
+            width: 340px;
+        }
+        .background-right {
+            // width: 85%;
+            // height: 85%;
+            height: 1566px;
+            width: 400px;
+        }
+    }   
+}
+
+@media screen and (max-width:1024px){
+    .background{
+        .background-left {
+            top: 170%;
+            left: 0;    
+            height: 1700px;
+            width: 300px;
+        }
+        .background-right {
+            top: 80%;
+            right: 0;    
+            height: 1800px;
+            width: 300px;
+        }
+    }   
+}
+
+@media screen and (max-width:767px){
+    .background{
+        .background-left {
+            top: 590%;
+            left: 0;    
+            height: 1903px;
+            width: 360px;
+        }
+        .background-right {
+            top: 386%;
+            right: 0;    
+            height: 1655px;
+            width: 330px;
+        }
+    }   
+}
+@media screen and (max-width:360px){
+    .background{
+        .background-left {
+            top: 590%;
+            left: 0;    
+            height: 1903px;
+            width: 360px;
+        }
+        .background-right {
+            top: 386%;
+            left: 0;    
+            height: 1655px;
+            width: 360px;
+        }
+    }   
+}

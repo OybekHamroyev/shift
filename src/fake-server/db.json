@@ -1,0 +1,38 @@
+{
+    "starter":[
+        {"icons":[{"classname":"icon1", "src":"img/+.svg"}, {"classname":"icon2", "src":"img/}.svg"}, {"classname":"icon3", "src":"img/o.svg"}]},
+        {"title":"Ready to change your life?"},
+        {"description":"Learn programming from international expert. Do not miss your chance, just click button and contact with us."},
+        {"img":"img/Frame (8).png"}
+    ],
+    "about":[
+        {"title":"About us"},
+        {"description":"Shift Academy opened in 2021 in Bukhara city. Our Academy is first programming school that have senior international web developer. In our Academy you can learn web programming from senior developers. Shift Academy teaches you latest technologies in web programming that is used from web developers in the world. Furthermore, our Academy helps its students to find a job and supports them by the time that they find their own way."},
+        {"src":"img/Frame (9).png"}
+    ],
+    "whyus":[
+                {"img":"img/Frame 3.svg", "title":"Highly Experienced Mentor", "description":"Students are taught by mentor with international experience"},
+                {"img":"img/Frame 4.svg","title":"Chance to get money back", "description":"You can get your money back with in 5 lessons if you are not satisfied the lessons."},
+                {"img":"img/Frame 5.svg", "title":"Modern Technologies", "description":"You will learn latest technologies regarding web programming."}        
+            ],
+    "courses":[
+        {"img":"img/Frame.svg", "title":"Frontend Course", "description":"In this section you will be taught latest technologies which are html5, scc3, javascript, react, webpack and redux."},
+        {"img":"img/Frame (1).svg", "title":"Backend Course", "description":"In backend course you will learn java, database, spring, microservice architecture and deploying (aws)."},
+        {"img":"img/Frame (2).svg", "title":"Free practice", "description":"This part of course only for graduates of Shift Academy which they will work on real projects as a team for 1 month."}
+    ],
+    "gallery":["img/shutterstock_607114880 1.png", "img/GettyImages-595349163-5b35665e46e0fb003707199d 1.png",
+        "img/128325_h_14962757 1.png", "img/the-way-to-success-freelance-web-programmer 1.png",
+        "img/2_jCllR8LrIAWmBLy4mmutZw 1.png", "img/atomiq 1.png"
+    ],
+    "ourteam":[
+        {"img":"img/waist-up-portrait-handsome.png", "name":"Xalimov Abdusobur", "description":"Senior web developer"},
+        {"img":"img/waist-up-portrait-handsome2.png", "name":"Qayumov Shahriyor", "description":"Assistant"},
+        {"img":"img/waist-up-portrait-handsome3.png", "name":"Bahodirov Bexruz", "description":"Assistant"}
+    ],
+    "footer":[
+        {"address":"Mega Market copmlex, 5-district, Bukhara city", "phone":"+998 94 124 00 41"},
+        {"services":["Frontend", "Database", "Backend", "Practice"]},
+        {"categories":["Home", "About us", "Courses", "Gallery"]}
+    ]
+    
+}

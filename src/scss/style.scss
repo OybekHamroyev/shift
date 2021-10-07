@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap');
+
+@import './reset';
+@import './variables';
+@import './components';
+
+@import '../components/header/header';
+@import '../components//brand/brand';
+@import '../components//starter/starter';
+@import '../components/about/about';
+@import '../components//whyus/whyus';
+@import '../components//courses/courses';
+@import '../components/gallery/gallery';
+@import '../components//ourteam/ourteam';
+@import '../components/footer/footer';
+@import '../components/background/background';

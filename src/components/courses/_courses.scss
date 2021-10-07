@@ -1,0 +1,166 @@
+.courses{
+    text-align: center;
+    padding: 0 215px 100px;
+    &__title{
+        margin: 0 0 70px 0;
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        &__item{
+            width: 370px;
+            height: 400px;
+            padding: 40px 22px;
+            border-radius: 4px;
+            box-shadow: 0px 0px 28px rgba(27, 27, 27, 0.15);
+            background: #FFFFFF;
+            &__img{
+                width: 115px;
+                height: 115px;
+            }
+            &__title{
+                margin: 99px 0 20px;
+                font-family: 'Montserrat';
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 22px;
+            }
+            &__description{
+                font-family: 'Montserrat';
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 20px;
+                text-align: center;                
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1366px){
+    .courses{
+        padding: 0 100px 100px;
+    }
+}
+
+@media screen and (max-width:1200px){
+    .courses{
+        text-align: center;
+        padding: 0 80px 100px;
+        &__title{
+            margin: 0 0 70px 0;
+        }
+        &__content{
+            display: flex;
+            justify-content: space-between;
+            &__item{
+                width: 335px;
+                height: 390px;
+                padding: 40px 22px;
+                &__img{
+                    width: 112px;
+                    height: 112px;
+                }
+                &__title{
+                    margin: 79px 0 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1024px){
+    .courses{
+        text-align: center;
+        padding: 0 75px 100px;
+        &__title{
+            margin: 0 0 70px 0;
+        }
+        &__content{
+            display: flex;
+            justify-content: space-between;
+            &__item{
+                width: 280px;
+                height: 380px;
+                padding: 38px 20px;
+                border-radius: 4px;
+                box-shadow: 0px 0px 28px rgba(27, 27, 27, 0.15);
+                background: #FFFFFF;
+                &__img{
+                    width: 110px;
+                    height: 110px;
+                }
+                &__title{
+                    margin: 55px 0 20px;
+                    font-family: 'Montserrat';
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+                &__description{
+                    font-family: 'Montserrat';
+                    font-weight: normal;
+                    font-size: 15px;
+                    line-height: 20px;
+                    text-align: center;                
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:767px){
+    .courses{
+        padding: 0 15px 100px;
+        &__content{
+            &__item{
+                width: 226px;
+                height: 244px;
+                padding: 19.23px 12px;
+                &__img{
+                    width: 72.54px;
+                    height: 72.54px;
+                }
+                &__title{
+                    margin: 36.45px 0 6.49px;
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+                &__description{
+                    font-size: 14px;
+                    line-height: 17px;             
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:360px){
+    .courses{
+        padding: 0 15px 100px;
+        &__content{
+            flex-direction: column;
+            align-items: center;
+            &__item{
+                width: 226px;
+                height: 244px;
+                padding: 19.23px 11px;
+                margin-bottom: 70px;
+                &:nth-last-child(1){
+                    margin-bottom: 0;
+                }
+                &__img{
+                    width: 72.54px;
+                    height: 72.54px;
+                }
+                &__title{
+                    margin: 36.45px 0 6.49px;
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+                &__description{
+                    font-size: 14px;
+                    line-height: 17px;             
+                }
+            }
+        }
+    }
+}
