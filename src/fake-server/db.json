@@ -13,7 +13,7 @@
     "whyus":[
                 {"img":"img/Frame 3.svg", "title":"Highly Experienced Mentor", "description":"Students are taught by mentor with international experience"},
                 {"img":"img/Frame 4.svg","title":"Chance to get money back", "description":"You can get your money back with in 5 lessons if you are not satisfied the lessons."},
-                {"img":"img/Frame 5.svg", "title":"Modern Technologies", "description":"You will learn latest technologies regarding web programming."}        
+                {"img":"img/Frame 5.png", "title":"Modern Technologies", "description":"You will learn latest technologies regarding web programming."}        
             ],
     "courses":[
         {"img":"img/Frame.svg", "title":"Frontend Course", "description":"In this section you will be taught latest technologies which are html5, scc3, javascript, react, webpack and redux."},

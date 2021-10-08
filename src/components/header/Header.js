@@ -14,10 +14,10 @@ const Header = () => {
                 <Collapse navbar isOpen={isOpen}>
                     <Nav navbar>
                         <NavItem>
-                            <div className={`nav-menu ${isOpen&&'nav-menu-visible'}`}>
-                                <p className="nav-menu-name">Menu</p>
-                                <button className="nav-menu-button">X</button>
-                            </div>
+                            <NavbarToggler id="toggler">
+                                Menu
+                                    <NavbarToggler className="toggler" onClick={toggle}/>
+                            </NavbarToggler>
                         </NavItem>
                         <NavItem>
                             <Link to="">Home</Link>
