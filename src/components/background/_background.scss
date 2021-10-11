@@ -2,7 +2,7 @@
     z-index: -1;
     .background-left {
         position: absolute;
-        top: 424%;
+        top: 246%;
         left: 0;
         z-index: -1;
         height: 1781px;
@@ -12,7 +12,7 @@
     }
     .background-right {
         position: absolute;
-        top: 230%;
+        top: 130%;
         right: 0;
         z-index: -1;
         height: 1666px;
@@ -26,13 +26,17 @@
         .background-left {
             // width: 85%;
             // height: 85%;
-            height: 1700px;
+            // height: 1500px;
+            top: 240%;
+            height: 1500px;
             width: 340px;
         }
         .background-right {
             // width: 85%;
             // height: 85%;
-            height: 1566px;
+            // height: 1566px;
+            top:130%;
+            height: 1500px;
             width: 400px;
         }
     }   
@@ -58,32 +62,85 @@
 @media screen and (max-width:767px){
     .background{
         .background-left {
-            top: 590%;
+            top: 440%;
             left: 0;    
             height: 1903px;
-            width: 360px;
+            width: 250px;
         }
         .background-right {
-            top: 386%;
+            top: 340%;
             right: 0;    
             height: 1655px;
-            width: 330px;
+            width: 250px;
         }
     }   
 }
-@media screen and (max-width:360px){
+@media screen and (max-width:640px){
     .background{
         .background-left {
-            top: 590%;
+            visibility: hidden;
+            top: 190%;
             left: 0;    
-            height: 1903px;
+            height: 1500px;
             width: 360px;
         }
         .background-right {
-            top: 386%;
+            visibility: hidden;
+            top: 286%;
             left: 0;    
-            height: 1655px;
+            height: 1255px;
             width: 360px;
+        }
+    }   
+}
+
+@media screen and (max-width:540px){
+    .background{
+        .background-left {
+            visibility: hidden;
+            top: 190%;
+            left: 0;    
+            height: 1500px;
+            width: 360px;
+        }
+        .background-right {
+            visibility: hidden;
+            top: 286%;
+            left: 0;    
+            height: 1255px;
+            width: 360px;
+        }
+    }   
+}
+
+@media screen and (max-width:411px){
+    .background{
+        .background-left {
+            visibility: hidden;
+            top: 190%;
+            left: 0;    
+            height: 1500px;
+            width: 360px;
+        }
+        .background-right {
+            visibility: hidden;
+            top: 286%;
+            left: 0;    
+            height: 1255px;
+            width: 360px;
+        }
+    }   
+}
+
+@media screen and (max-width:360px){
+    .background{
+        .background-left {
+            top: 100%;
+            left: 0;    
+        }
+        .background-right {
+            top: 106%;
+            left: 0;    
         }
     }   
 }

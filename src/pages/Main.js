@@ -1,5 +1,4 @@
 import Header from "../components/header/Header";
-import { BrowserRouter as Router } from 'react-router-dom'
 import Starter from "../components/starter/Starter";
 import About from "../components/about/About";
 import Whyus from "../components/whyus/Whyus";
@@ -12,7 +11,6 @@ import Background from "../components/background/Background";
 const Main = () => {
     return (
         <div>
-        <Router>
             <Background/>
             <Header/>
             <Starter/>
@@ -22,7 +20,6 @@ const Main = () => {
             <Gallery/>
             <Ourteam/>
             <Footer/>
-        </Router>
         </div>
     );
 };

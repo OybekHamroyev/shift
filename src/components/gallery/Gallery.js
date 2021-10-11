@@ -1,18 +1,16 @@
-import { useState, useEffect } from 'react';
-import axios from 'axios'
+import { useSelector } from 'react-redux';
+import { Spinner } from 'reactstrap';
 const Gallery = () => {
-    const [gallery, setgallery] = useState([])
-    useEffect(() => {
-        axios.get('http://localhost:3000/gallery').then(res=>setgallery(res.data))
-    }, []);
+    const { gallery, isLoading } = useSelector(state => state.main);
     return (
-        gallery?<div className="gallery">
+        <div className="gallery">
             <h4 className="titlePrm">Gallery</h4>
             <div className="gallery__content">
-                {gallery?gallery.map(img=><img className="gallery__content__img" src={img}/>):"loading..."}
+                {isLoading?<Spinner/>:gallery && gallery.map((img,idx)=><img className="gallery__content__img" key={idx}
+                alt="gallery" src={img}/>)}
             </div>
             <button className="gallery__button buttonSml">see more</button>
-        </div>:"Loading"
+        </div>
     );
 };
 

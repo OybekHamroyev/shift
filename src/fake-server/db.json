@@ -1,4 +1,5 @@
-{
+
+{ "main":{
     "starter":[
         {"icons":[{"classname":"icon1", "src":"img/+.svg"}, {"classname":"icon2", "src":"img/}.svg"}, {"classname":"icon3", "src":"img/o.svg"}]},
         {"title":"Ready to change your life?"},
@@ -34,5 +35,5 @@
         {"services":["Frontend", "Database", "Backend", "Practice"]},
         {"categories":["Home", "About us", "Courses", "Gallery"]}
     ]
-    
+}
 }

@@ -40,6 +40,12 @@
                 font-weight: normal;
                 font-size: 16px;
                 line-height: 22px;
+                a{
+                    color:$color-fourth;
+                    &:hover{
+                        color: $color-secondary;
+                    }
+                }
             }
         }
         &__categories{
@@ -58,6 +64,12 @@
                 font-weight: normal;
                 font-size: 16px;
                 line-height: 22px;
+                a{
+                    color:$color-fourth;
+                    &:hover{
+                        color: $color-secondary;
+                    }
+                }
             }
         }
         &__follow{
@@ -98,6 +110,97 @@
 @media screen and (max-width:1366px){
     .footer{
         padding: 70px 100px 0;
+        &__content{
+            margin-bottom: 90px;
+            display: flex;
+            &__about{
+                margin-right: 170px;
+                &__address{
+                    font-family: 'Montserrat';
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19.5px;
+                    margin: 20px 0;
+                    width:262px;
+                }
+                &__phone{
+                    font-family: 'Montserrat';
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+            &-right{
+                display: flex;
+                &__services{
+                padding: 0;
+                list-style: none;
+                margin-right: 170px;
+                &__title{
+                    font-family: 'Montserrat';
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 25px;
+                    margin-bottom: 20px;
+                }
+                li{
+                    font-family: 'Montserrat';
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+            }
+            &__categories{
+                list-style: none;
+                margin-right: 170px;
+                padding: 0;
+                &__title{   
+                    font-family: 'Montserrat';
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 25px;
+                    margin-bottom: 20px;
+                }
+                li{
+                    font-family: 'Montserrat';
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+            }
+            &__follow{
+                &__title{
+                    font-family: 'Montserrat';
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 25px;
+                    margin-bottom: 20px;
+                }
+                &__item{
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 0;
+                    width: 158px;
+                    svg{
+                        color: $color-fourth;
+                        &:hover{
+                            color: $color-secondary;
+                        }
+                    }
+                }
+            }
+        }
+        }
+        &__bottom{
+            border-top: 1px solid;
+            padding: 20px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 20px;
+        }
     }
 }
 
@@ -209,7 +312,7 @@
             margin-bottom: 90px;
             display: flex;
             &__about{
-                margin-right: 130px;
+                margin-right: 12%;
                 &__address{
                     font-family: 'Montserrat';
                     font-weight: 400;
@@ -230,7 +333,7 @@
                 &__services{
                 padding: 0;
                 list-style: none;
-                margin-right: 130px;
+                margin-right: 35%;
                 &__title{
                     font-family: 'Montserrat';
                     font-weight: bold;
@@ -247,7 +350,7 @@
             }
             &__categories{
                 list-style: none;
-                margin-right: 130px;
+                margin-right: 35%;
                 padding: 0;
                 &__title{   
                     font-family: 'Montserrat';
@@ -326,7 +429,7 @@
                 &__services{
                 padding: 0;
                 list-style: none;
-                margin-right: 133px;
+                margin-right: 18%;
                 &__title{
                     font-family: 'Montserrat';
                     font-weight: bold;
@@ -343,7 +446,7 @@
             }
             &__categories{
                 list-style: none;
-                margin-right: 130px;
+                margin-right: 18%;
                 padding: 0;
                 &__title{   
                     font-family: 'Montserrat';
@@ -395,6 +498,104 @@
         }
     }
 }
+
+@media screen and (max-width:411px){
+    .footer{
+        padding: 50px 15px 0;
+        &__content{
+            flex-direction: column;
+            &__about{
+                margin-bottom: 50px;
+                &__address{
+                    font-family: 'Montserrat';
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 17px;
+                    margin: 20px 0;
+                    width:323px;
+                }
+                &__phone{
+                    font-family: 'Montserrat';
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 17px;
+                }
+            }
+            &-right{
+                flex-direction: row;
+                flex-wrap: wrap;
+                &__services{
+                padding: 0;
+                list-style: none;
+                margin-right: 110px;
+                &__title{
+                    font-family: 'Montserrat';
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 20px;
+                    margin-bottom: 20px;
+                }
+                li{
+                    font-family: 'Montserrat';
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+            &__categories{
+                list-style: none;
+                margin-right: 0;
+                &__title{   
+                    font-family: 'Montserrat';
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 20px;
+                    margin-bottom: 20px;
+
+                }
+                li{
+                    font-family: 'Montserrat';
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+            &__follow{
+                margin-top: 50px;
+                &__title{
+                    font-family: 'Montserrat';
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 20px;
+                    margin-bottom: 20px;
+                }
+                &__item{
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 0;
+                    width: 143px;
+                    svg{
+                        color: $color-fourth;
+                        &:hover{
+                            color: $color-secondary;
+                        }
+                    }
+                }
+            }
+        }
+        }
+        &__bottom{
+            border-top: 1px solid;
+            padding: 20px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 8px;
+            line-height: 10px;
+        }
+    }
+}
+
 @media screen and (max-width:360px){
     .footer{
         padding: 50px 15px 0;

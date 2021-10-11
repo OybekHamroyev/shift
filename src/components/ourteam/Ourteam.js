@@ -1,16 +1,12 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
+import { useSelector } from "react-redux";
 import AliceCarousel from "react-alice-carousel";
 const Ourteam = () => {
-    const [ourteam, setourteam] = useState([])
-    useEffect(() => {
-        axios.get('http://localhost:3000/ourteam').then(res=>setourteam(res.data))
-    }, []);
+    const { ourteam } = useSelector(state => state.main);
     const handleDragStart=(e)=>e.preventDefault();
-    const items = []
-    ourteam.map(({ img, name, description }) =>{
-        return  items.push(<div className="ourteam__content__item" onDragStart={handleDragStart}>
-                    <img className="ourteam__content__item__img" src={img} />
+    const items = [];
+    ourteam&&ourteam.map(({ img, name, description },idx) =>{
+        return  items.push(<div className="ourteam__content__item" onDragStart={handleDragStart} key={idx}>
+                    <img className="ourteam__content__item__img" src={img} alt="ourteam" />
                     <p className="ourteam__content__item__name">{name}</p>
                     <p className="ourteam__content__item__description">{description}</p>
                 </div>)

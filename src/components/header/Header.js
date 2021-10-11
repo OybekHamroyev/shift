@@ -14,13 +14,7 @@ const Header = () => {
                 <Collapse navbar isOpen={isOpen}>
                     <Nav navbar>
                         <NavItem>
-                            <NavbarToggler id="toggler">
-                                Menu
-                                    <NavbarToggler className="toggler" onClick={toggle}/>
-                            </NavbarToggler>
-                        </NavItem>
-                        <NavItem>
-                            <Link to="">Home</Link>
+                            <Link to="/">Home</Link>
                         </NavItem>
                         <NavItem>
                             <Link to="">About us</Link>

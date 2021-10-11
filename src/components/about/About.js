@@ -1,15 +1,13 @@
-import { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
+import { Spinner } from "reactstrap";
 const About = () => {
-    const [abouts, setabouts] = useState([]);
-    useEffect(() => {
-        fetch('http://localhost:3000/about').then(res=>res.json()).then(data=>setabouts(data))
-    }, []);
-    return (
+    const {about, isLoading} = useSelector(state => state.main);
+    return (isLoading?<Spinner/>:
         <div className="about">
-            {abouts.map(({ src }) => src && <img className="about__img" src={src} />)}
+            {about&&about.map(({ src }, idx) => src && <img key={idx} alt="about" className="about__img" src={src} />)}
             <div className="about__info">
-                <h4 className="about__info__title titlePrm">{abouts.map(({title}) =>title)}</h4>
-                <p className="about__info__description">{abouts.map(({description}) =>description)}</p>
+                <h4 className="about__info__title titlePrm">{about&&about.map(({title}) =>title)}</h4>
+                <p className="about__info__description">{about&&about.map(({description}) =>description)}</p>
             </div>
         </div>
     );

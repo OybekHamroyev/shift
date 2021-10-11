@@ -1,17 +1,14 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
+import { useSelector } from "react-redux";
+import { Spinner } from "reactstrap";
 const Courses = () => {
-    const [courses, setcourses] = useState([]);
-    useEffect(() => {
-        axios.get('http://localhost:3000/courses').then(res=>setcourses(res.data))
-    }, []);
+    const { courses, isLoading } = useSelector(state => state.main);
     return (
         <div className="courses">
             <h4 className="courses__title titlePrm">Courses</h4>
             <div className="courses__content">
-                {courses.map(({img, title, description})=>
-                <div className="courses__content__item">
-                    <img className="courses__content__item__img" src={img} />
+                {isLoading?<Spinner/>:courses && courses.map(({img, title, description}, idx)=>
+                <div className="courses__content__item" key={idx}>
+                    <img className="courses__content__item__img" alt="courses" src={img} />
                     <p className="courses__content__item__title">{title}</p>
                     <p className="courses__content__item__description">{description}</p>
                 </div>
